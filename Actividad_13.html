@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="expires" content="0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>SSOR</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="fondo_mayor">
+        <div class="cuerpo">
+            <a href="index.html">
+            <div class="pie">
+                <p class="copy">
+                        Seminario de Solución de Problemas de Sistemas Operativos de Red
+                    <br> 
+                        D05
+                </p>
+            </div>
+            </a>
+            <div class="caja">
+                <div class="lateral">&nbsp;</div>
+                <div class="bienvenida">
+                    <h2 class="texto_bienvenida_2">
+                        ACTIVIDAD 13
+                    </h2>
+                </div>
+                <div class="lateral">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <img class="img_banner" src="Imagenes/Principal/divisor_ojo_simple.jpg" />
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen">
+                    <p class="texto">
+                        Instalar samba en windows y linux y configurar para compartir, carpetas, archivos e impresoras.
+                        <br>
+                    </p>
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen">
+                    <p class="texto">
+                        En Windows lo primero que tenemos que hacer es abrir la opción de "activar o desactivar las caracteristicas de windows".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/1.jpg" />
+                    <p class="texto">
+                        Una vez que ingresemos activamos la opción de "Compatibilidad con el protocolo para compartir archivos SMB1.0/CIFS".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/2.jpg" />
+                    <p class="texto">
+                        Enseguida comenzará la busqueda de archivos necesarios, por lo que tendremos que esperar.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/3.jpg" />
+                    <p class="texto">
+                        Posteriormente se aplicarán los cambios lo cual toma un tiempo.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/4.jpg" />
+                    <p class="texto">
+                        Una vez que el proceso termine tendrémos que reiniciar nuestro PC.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/5.jpg" />
+                    <p class="texto">
+                        Esperamos a que la computadora se reinicie.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/6.jpg" />
+                    <p class="texto">
+                        Creamos una carpeta con los archivos que deseamos compartir.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/7.jpg" />
+                    <p class="texto">
+                        Damos click derecho en la carpeta, nos vamos a "Propiedades", seleccionamos "Compartir" y damos click en "Uso Compartido Avanzado".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/8.jpg" />
+                    <p class="texto">
+                        Después le damos click a "Permisos"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/9.jpg" />
+                    <p class="texto">
+                        Activamos todos los permisos.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/10.jpg" />
+                    <p class="texto">
+                        Ahora en Lubuntu abrimos la consola y actualizamos los paquetes con el comando "sudo apt-get update".
+                        Para esto primero tenemos que iniciar como root con el comando "sudo -s"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/11.jpg" />
+                    <p class="texto">
+                        Una vez actualizados los paquetes usamos el comando "sudo apt-get install samba".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/12.jpg" />
+                    <p class="texto">
+                        Se comenzará la instalación y tendremos que presionar "s" para continuar.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/13.jpg" />
+                    <p class="texto">
+                        Esperamos a que se instale samba.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/14.jpg" />
+                    <p class="texto">
+                        Ahora necesitamos encontrar y modificar el archivo "smb.conf".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/15.jpg" />
+                    <p class="texto">
+                        Para ello en la consola nos movemos a la ubicación del archivo y con el comando "sudo chmod 777 smb.conf" otorgamos permisos para poder modificarlo.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/16.jpg" />
+                    <p class="texto">
+                        Abrimos el archivo en algún editor de texto y agregamos las instrucciónes que se muestran en la imagen.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/17.jpg" />
+                    <p class="texto">
+                        Ahora creamos un usuario con el comando "sudo smbpasswd -L -a NombreDeUsuario".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/18.jpg" />
+                    <p class="texto">
+                        Con el comando "sudo smbpasswd -L -e NombreDeUusuario" activamos a dicho usuario.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/19.jpg" />
+                    <p class="texto">
+                        Con el comando "sudo /etc/init.d/smbd restart" reiniciamos el servicio para que se apliquen los cambios.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/20.jpg" />
+                    <p class="texto">
+                        Agregamos la imagen que deseamos compartir a nuestra carpeta compartida.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/21.jpg" />
+                    <p class="texto">
+                        Desde Windows podremos acceder a la carpeta compartida haciendo click en la opción de red. Como puede verse esta disponible la carpeta "GUSTAVO-N250P" la carpeta compartida desde Lubuntu. 
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/22.jpg" />
+                    <p class="texto">
+                        Tratamos de acceder y nos pedirá llenar un formulario.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/23.jpg" />
+                    <p class="texto">
+                        El formulario lo llenamos con los datos del usuario creado en Lubuntu.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/24.jpg" />
+                    <p class="texto">
+                        Una vez ingresadas las credenciales correctas podremos acceder a la carpeta compartida.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/25.jpg" />
+                    <p class="texto">
+                        Aquí se muestra la imagen compartida.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/26.jpg" />
+                    <p class="texto">
+                        Para acceder desde Lubunto de la misma forma nos vamos a red.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/27.jpg" />
+                    <p class="texto">
+                        Abrimos la red de Windows.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/28.jpg" />
+                    <p class="texto">
+                        Y nos aparece la carpeta compartida desde Windows.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_13/29.jpg" />
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div> 
+        </div>
+        <div class="pie">
+            <p class="copy">
+                Gustavo Rodrigo Contreras Ruvalcaba
+                <br>
+                
+            </p>
+        </div>
+    </body>
+</html>

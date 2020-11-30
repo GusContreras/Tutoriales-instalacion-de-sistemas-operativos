@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="expires" content="0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>SSOR</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="fondo_mayor">
+        <div class="cuerpo">
+            <a href="index.html">
+            <div class="pie">
+                <p class="copy">
+                        Seminario de Solución de Problemas de Sistemas Operativos de Red
+                    <br> 
+                        D05
+                </p>
+            </div>
+            </a>
+            <div class="caja">
+                <div class="lateral">&nbsp;</div>
+                <div class="bienvenida">
+                    <h2 class="texto_bienvenida_2">
+                        ACTIVIDAD 12
+                    </h2>
+                </div>
+                <div class="lateral">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <img class="img_banner" src="Imagenes/Principal/divisor_ojo_simple.jpg" />
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen">
+                    <p class="texto">
+                        Instalar un sistema en django con bases de datos y uno en rubi on rails con bases de datos y asignar diferentes permisos de acceso a los grupos de usuarios en cada sistema.
+                        <br>
+                    </p>
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen">
+                    <p class="texto">
+                        Por comodidad, lo primero que vamos a hacer es obtener la versión ejecutable de PUTTY para trabajar de forma remota. Para descargar PUTTY solo tenemos que hacer click 
+                        <a href="https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe"  target="_blank">aquí</a>
+                        Una vez descargada la aplicación, procederemos a instalar openssh-server en nuestro equipo con Ubuntu Server, primero iniciamos como root con "sudo -s", después actualizamos los paquetes con "sudo apt update", instalamos el servicio con el comando "sudo apt install openssh-server" y verificamos que el servicio este correiendo con el comando "sudo systemctl status ssh".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/1.jpg" />
+                    <p class="texto">
+                        Con el servicio instalado y en correcto funcionamiento, ahora es necesario conocer la dirección IP de la PC que cuenta con Ubuntu Server, para ello usaremos el comando "ip a".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/2.jpg" />
+                    <p class="texto">
+                        Ahora que conocemos la IP la agregamos en la aplicación de PUTTY, una vez que sea agregada presionamos el boton de "Open".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/3.jpg" />
+                    <p class="texto">
+                        La primera vez que hagamos esto deberemos añadir la llave o huella SSH del servidor, para eso damos clic sobre "Si".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/4.jpg" />
+                    <p class="texto">
+                        Posteriormente se abrira una consola donde tendremos que iniciar sesión con los datos de nuestro usuario administrador de Ubuntu Server.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/5.jpg" />
+                    <p class="texto">
+                        Una vez conectados de forma remota lo primero que debemos hacer es ingresar el siguiente comando "gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 \ 7D2BAF1CF37B13E2069D6956105BD0E739499BDB", el cual hará que tengamos curl en nuestro sistema. 
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/6.jpg" />
+                    <p class="texto">
+                        Una vez curl se haya instalado, ahora podremos iniciar con el proceso de instalación de Ruby, para ello utilizaremos el siguiente comando "curl -sSL https://get.rvm.io | bash -s stable --ruby", a la mitad del proceso se nos solicitará la contraseña del usuario root, la ingresamos y presionamos Enter.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/7.jpg" />
+                    <p class="texto">
+                        Ahora tenemos que obtener las referencias a todas las librerías estables para Ruby, esto se logra ingresando este comando "rvm get stable --autolibs=enable"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/9.jpg" />
+                    <p class="texto">
+                        Posteriormente usamos el comando "rvm install ruby-2.6.1" para instalar Ruby.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/10.jpg" />
+                    <p class="texto">
+                        Ahora configuramos la versión descargada de Ruby como la versión por defecto con el comando "rvm --default use ruby-2.6.1".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/11.jpg" />
+                    <p class="texto">
+                        Ahora es necesario instalar NodeJs para ello utilizaremos el comando "curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/12.jpg" />
+                    <p class="texto">
+                        A continuación llevaremos a cabo su instalación con el comando "sudo apt-get install -y nodejs".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/14.jpg" />
+                    <p class="texto">
+                        También necesitamos de C++, esto lo conseguiremos con el comando "sudo apt install gcc g++ make".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/15.jpg" />
+                    <p class="texto">
+                        Para aplicar los cambios hechos sobre Ruby debemos actualizar Gem, esto es posible al ingresar el siguiente comando "gem update --system".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/16.jpg" />
+                    <p class="texto">
+                        Con el comando "gem -v" verificamos la versión y la correcta instalación.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/17.jpg" />
+                    <p class="texto">
+                        Con gem instalado y actualizado procederemos a instalar rails con el comando "gem install rails -v 6.0.1".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/18.jpg" />
+                    <p class="texto">
+                        Verificamos la versión de rails con el comando "rails -v".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/19.jpg" />
+                    <p class="texto">
+                        Ahora necesitamos una base de datos, en este caso usaremos postgres con el comando "sudo apt install postgresql postgresql-contrib libpq-dev -y".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/20.jpg" />
+                    <p class="texto">
+                        Ahora debemos iniciar los servicios de postgresql, esto se logra con los comandos "systemctl start postgresql" y "systemctl enable postgresql".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/21.jpg" />
+                    <p class="texto">
+                        Iniciamos la aplicación de Postgres con el comando "sudo -u postgres psql" y configuramos sus credenciales de acceso con el comando "\password postgres", también crearemos un objeto que permita hacer la conexión al gestor de bases de datos, para ello utilizaremos el comando "create role rails_dev with createdb login password 'gustavo'".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/22.jpg" />
+                    <p class="texto">
+                        Posteriormente comenzaremos la instalación de Yarn con el comando "sudo apt install yarn".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/23.jpg" />
+                    <p class="texto">
+                        Creamos un nuevo proyecto de Ruby con base de datos postgres con el comando "rails new RubyOnRailsBD -d postgresql".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/24.jpg" />
+                    <p class="texto">
+                        Nos dirigimos a la carpeta donde la aplicación fue generara y utilizando vim modificamos el archivo de la base de datos. Esto se logra con los comandos "cd RubyOnRailsBD" y "vim config/database.yml".
+                        Esto es lo que tenemos que agregar en el archivo:
+                        <br>
+                        host: localhost
+                        <br>
+                        port: 5432
+                        <br>
+                        username: rails_dev
+                        <br>
+                        password: gustavo
+                        <br>
+                        En el lugar donde se muestra la imagen.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/25.jpg" />
+                    <p class="texto">
+                        Volvemos a agregar lo siguiente:
+                        <br>
+                        host: localhost
+                        <br>
+                        port: 5432
+                        <br>
+                        username: rails_dev
+                        <br>
+                        password: gustavo
+                        <br>
+                        En el lugar donde se muestra la imagen.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/26.jpg" />
+                    <p class="texto">
+                        Para aplicar los cambios realizados sobre la base de datos debemos ingresar el comando "rails db:setup".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/27.jpg" />
+                    <p class="texto">
+                        También es necesario migrar la base con el comando "rails db:migrate".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/28.jpg" />
+                    <p class="texto">
+                        Por fin con el comando "rails s -b 192.168.0.19 -p 8080" podremos correr nuestro proyecto.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/29.jpg" />
+                    <p class="texto">
+                        Podremos ingresar a el colocando la dirección IP así como el puerto en nuestro navegador.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/30.jpg" />
+                    <p class="texto">
+                        Ahora para el sistema de Django lo primero que tenemos que hacer es instalar Python con el comando "sudo apt-get install python3 python3-pip".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/31.jpg" />
+                    <p class="texto">
+                        Modificamos la verión por defecto con el comando "sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/32.jpg" />
+                    <p class="texto">
+                        Del mismo modo instalamos la versión pip de python con el comando "sudo apt install python3-pip -y".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/33.jpg" />
+                    <p class="texto">
+                        Tendremos que dar que "s" para que se complete la descarga, posteriormente instalamos Django con el comando "pip3 install Django"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/34.jpg" />
+                    <p class="texto">
+                        Después de corromper algunos proyectos por cometer errores, creamos un nuevo proyecto con el comando "django-admin startproject proyecto", nos movemos al directorio con el comando "cd proyecto" y modificamos uno de sus archivos con el comando "nano proyecto/settings.py".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/35.jpg" />
+                    <p class="texto">
+                        Lo único que tenemos que agregar es la dirección IP de nuestra maquina con Ubuntu Server.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/36.jpg" />
+                    <p class="texto">
+                        Con el comando "python manage.py migrate" se generará una migración de la base de datos utilizando como ruta la dirección IP previamente configurada.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/37.jpg" />
+                    <p class="texto">
+                        Con el comando "python manage.py createsuperuser" creamos un super usuario y le asignamos credenciales llenando un formulario.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/38.jpg" />
+                    <p class="texto">
+                        Por último corremos nuestro servicio con el comando "python manage.py runserver 192.168.0.17:8000".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/39.jpg" />
+                    <p class="texto">
+                        Podremos acceder a el de la misma forma que en Ruby, colocando en el navegador de cualquier dispositivo conectado a la red la dirección IP y el puerto.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/40.jpg" />
+                    <p class="texto">
+                        También podemos ingresar como admin para modificar la base de datos.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/41.jpg" />
+                    <p class="texto">
+                        Para asignar permisos primero asignamos un grupo a uno de los proyectos con el comando "sudo chown -R :GrupoMaestro /home/gustavo/proyecto".
+                        <br>
+                        <br>
+                        Posteriormente le damos permisos de lectura y escritura con el comando "sudo chmod -R g+w /home/gustavo/proyecto".
+                        <br>
+                        <br>
+                        Por último restringiremos el acceso a todos los usuarios excepto a aquellos que pertenezcan al grupo asignado, esto se hace con el comando "sudo chmod -R o-x /home/gustavo/proyecto"
+                        <br>
+                        <br>
+                        Repetimos el proceso con el otro proyecto.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/42.jpg" />
+                    <p class="texto">
+                        Esto ha sido todo. Wall-E se despide.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_12/43.jpg" />
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div> 
+        </div>
+        <div class="pie">
+            <p class="copy">
+                Gustavo Rodrigo Contreras Ruvalcaba
+                <br>
+                
+            </p>
+        </div>
+    </body>
+</html>

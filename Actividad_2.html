@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="expires" content="0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>SSOR</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="fondo_mayor">
+        <div class="cuerpo">
+            <a href="index.html">
+            <div class="pie">
+                <p class="copy">
+                        Seminario de Solución de Problemas de Sistemas Operativos de Red
+                    <br> 
+                        D05
+                </p>
+            </div>
+            </a>
+            <div class="caja">
+                <div class="lateral">&nbsp;</div>
+                <div class="bienvenida">
+                    <h2 class="texto_bienvenida_2">
+                        ACTIVIDAD 2
+                    </h2>
+                </div>
+                <div class="lateral">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <img class="img_banner" src="Imagenes/Principal/divisor_ojo_simple.jpg" />
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen">
+                    <p class="texto">
+                        Desarrollar un programa para ver los servicios de windows y linux.
+                        <br>
+                        <br>
+                        <a href="#Programa">Programa</a>
+                        <br>
+                        <a href="#Windoes 10">Ejecutar en Windows 10</a>
+                        <br>
+                        <a href="#Lubuntu">Ejecutar en Lubuntu</a>
+                    </p>
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen" id="Programa">
+                    <p class="texto_bienvenida">
+                        Programa
+                    </p>
+                    <p class="texto">
+                        Para poder ver los servicios de Windows y Linux se realizó un programa en el lenguaje de Python. Dicho programa es simple puesto que verifica el tipo de Sistema Operativo, si es Linux ejecuta el comando "service --status-all" el cual muestra todos los servicios en ejecución y detenidos, si no es Linux ejecuta el comando "net start", dicho comando es compatible con Windows y del mismo modo muestra todos los servicios.  
+                        Para realizar dicho programa se requiere de Python 3.6. En Lubuntu no tendremos problemas puesto que ya viene instalado por defecto, sin embargo para poder ejecutar el programa en Windows 10 necesitaremos instalarlo, podemos accceder a Python 
+                        <a href="https://www.python.org/downloads/release/python-360/"  target="_blank">aquí</a>
+                        <br>
+                        A continuación se muestra el programa empleado.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_2/Programa.jpg" />
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen" id="Windows 10">
+                    <p class="texto_bienvenida">
+                        Ejecutar en Windows 10
+                    </p>
+                    <p class="texto">
+                        Una vez instalado Python y ya tengamos nuestro programa listo, abrimos la terminal de Windows.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_2/terminal_Windows.jpg" />
+                    <p class="texto">
+                        Nos movemos al directorio donde se encuentre nuestro programa y lo ejecutamos, enseguida se mostrarán los servicios de Windows.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_2/w1.png" />
+                    <p class="texto">
+                        Aquí se muestran más servicios.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_2/w2.png" />
+                    <p class="texto">
+                        Aquí se muestran los últimos servicios.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_2/w3.png" />
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen" id="Acceder a la BIOS">
+                    <p class="texto_bienvenida">
+                        Ejecutar en Lubuntu
+                    </p>
+                    <p class="texto">
+                        Una vez que tengamos el programa en nuestro equipo, tenemos que dirigirnos a la terminal.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_2/terminal_Linux.jpg" />
+                    <p class="texto">
+                        Ya que estemos en la terminal nos movemos al directorio donde se encuentra nuestro programa.  
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_2/l1.jpg" />
+                    <p class="texto">
+                        Cuando estemos en el directorio correcto ejecutamos el programa con la sentencia "python3 'nombre'.py", enseguida se mostrarán los servicios.
+                        <br>
+                        [ + ] = Servicios ejecutandose.
+                        <br>
+                        [ - ] = Servicios detenidos.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_2/l2.jpg" />
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>       
+        </div>
+        <div class="pie">
+            <p class="copy">
+                Gustavo Rodrigo Contreras Ruvalcaba
+                <br>
+                
+            </p>
+        </div>
+    </body>
+</html>

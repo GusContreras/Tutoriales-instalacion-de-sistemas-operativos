@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="expires" content="0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>SSOR</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="fondo_mayor">
+        <div class="cuerpo">
+            <a href="index.html">
+            <div class="pie">
+                <p class="copy">
+                        Seminario de Solución de Problemas de Sistemas Operativos de Red
+                    <br> 
+                        D05
+                </p>
+            </div>
+            </a>
+            <div class="caja">
+                <div class="lateral">&nbsp;</div>
+                <div class="bienvenida">
+                    <h2 class="texto_bienvenida_2">
+                        ACTIVIDAD 11
+                    </h2>
+                </div>
+                <div class="lateral">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <img class="img_banner" src="Imagenes/Principal/divisor_ojo_simple.jpg" />
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen">
+                    <p class="texto">
+                        Instalar linux server y configurar 10 usuarios, configurar 4 grupos de usuarios.
+                        <br>
+                        <a href="#Introduccion">Introducción</a>
+                        <br>
+                        <a href="#Ubuntu Server">Instalación</a>
+                        <br>
+                        <a href="#UsuariosGrupos">Creación de Grupos y Usuarios</a>
+                    </p>
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen" id="Introduccion">
+                    <p class="texto_bienvenida">
+                        Introducción
+                    </p>
+                    <p class="texto">
+                        Ubuntu Server es una variante de Ubuntu y está dedicada especialmente para su uso en servidores. El uso de Ubuntu como servidor se ha extendido mucho en los últimos años, sobretodo para el uso de servidores web.
+                        <br>
+                        Para descargar Ubuntu Server has click 
+                        <a href="https://ubuntu.com/download/server"  target="_blank">aquí</a> 
+                    </p>
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen" id="Ubuntu Server">
+                    <p class="texto_bienvenida">
+                        Instalación de Ubuntu Server
+                    </p>
+                    <p class="texto">
+                        Lo primero que tenemos que hacer es elegir el idioma de preferencia.
+                    </p>    
+                    <img class="img_banner" src="Imagenes/Actividad_11/1.jpg" />
+                    <p class="texto">
+                        Elegimos la distribución de teclado.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/2.jpg" />
+                    <p class="texto">
+                       Dejamos por defecto los adaptadores de red.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/3.jpg" />
+                    <p class="texto">
+                        Damos click en hecho, ya que en mi caso no requiero de un proxy para hacer la conexión.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/4.jpg" />
+                    <p class="texto">
+                        Dejamos el espejo por defecto y damos click en hecho.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/5.jpg" />
+                    <p class="texto">
+                       Ahora se nos pregunta donde se instalará el sistema operativo, en este caso elegimos el disco entero y damos click en hecho.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/6.jpg" />
+                    <p class="texto">
+                       Se desplegará un mensaje de advertencia, debido a que todo el contenido del disco será borrado, simplemente le damos en continuar.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/8.jpg" />
+                    <p class="texto">
+                       Creamos nuestro usuario principal rellenando el formulario.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/9.jpg" />
+                    <p class="texto">
+                       Damos click en hecho.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/10.jpg" />
+                    <p class="texto">
+                      Como no requerimos ningún complemento solo damos click en hecho.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/11.jpg" />
+                    <p class="texto">
+                       Esperamos a que se realice la instalación.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/12.jpg" />
+                    <p class="texto">
+                       Una vez que la instalación haya finalizado damos click en reiniciar.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/13.jpg" />
+                    <p class="texto">
+                       Una vez se haya reiniciado podremos iniciar sesión con el usuario que anteriormente creamos.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/14.jpg" />
+                    <p class="texto">
+                       Iniciamos sesión tranquilamente.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/15.jpg" />
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen" id="UsuariosGrupos">
+                    <p class="texto_bienvenida">
+                        Creación de Usuarios y Grupos
+                    </p>
+                    <p class="texto">
+                       Lo primero que tenemos que hacer es utilizar el comando "sudo -s" para iniciar como administrador.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/16.jpg" />
+                    <p class="texto">
+                       Creamos 4 grupos usando el comando "groupadd -g ID NombreDelGrupo".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/17.jpg" />
+                    <p class="texto">
+                       Creamos 10 usuarios con el comando "useradd -u IdUsuario -G IdGrupo NombreDeUsuario".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_11/18.jpg" />
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>       
+        </div>
+        <div class="pie">
+            <p class="copy">
+                Gustavo Rodrigo Contreras Ruvalcaba
+                <br>
+                
+            </p>
+        </div>
+    </body>
+</html>

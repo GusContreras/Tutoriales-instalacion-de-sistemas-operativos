@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="expires" content="0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>SSOR</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="fondo_mayor">
+        <div class="cuerpo">
+            <a href="index.html">
+            <div class="pie">
+                <p class="copy">
+                        Seminario de Solución de Problemas de Sistemas Operativos de Red
+                    <br> 
+                        D05
+                </p>
+            </div>
+            </a>
+            <div class="caja">
+                <div class="lateral">&nbsp;</div>
+                <div class="bienvenida">
+                    <h2 class="texto_bienvenida_2">
+                        ACTIVIDAD 5
+                    </h2>
+                </div>
+                <div class="lateral">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <img class="img_banner" src="Imagenes/Principal/divisor_ojo_simple.jpg" />
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen">
+                    <p class="texto">
+                        Instalar django con python y desarrollar una aplicación básica en linux y windows.
+                        <br>
+                        <br>
+                        <a href="#LibreOffice">Introducción</a>
+                        <br>
+                        <a href="#Windows 10">Instación en Windows 10</a>
+                        <br>
+                        <a href="#Lubuntu">Instalación en Lubuntu</a>
+                    </p>
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen" id="LibreOffice">
+                    <p class="texto_bienvenida">
+                        Introducción
+                    </p>
+                    <p class="texto">
+                        Python es un  lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.
+                        Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.
+                        <br>
+                        Para descargar python has click 
+                        <a href="https://www.python.org/"  target="_blank">aquí</a> 
+                        <br>
+                        Django es un framework web diseñado para realizar aplicaciones de manera fácil y rápida. Está escrito en Python y tiene una comunidad muy amplia, que está en continuo crecimiento.
+                        <br>
+                        Para conseguir Django necesitamos unos comandos los cuales podemos encontrar
+                        <a href="https://www.djangoproject.com/download/"  target="_blank">aquí</a>
+                        El programa realizado es sencillo ya que solo será una variante del típico "Hola Mundo".
+                        <img class="img_banner" src="Imagenes/Actividad_5/w10.jpg" />
+                    </p>
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen" id="Windows 10">
+                    <p class="texto_bienvenida">
+                        Instalación en Windows 10
+                    </p>
+                    <p class="texto">
+                        Lo primero que tenemos que hacer es instalar Python, para ello abrimos el link que se dejo arriba en la introducción y descargamos y ejecutamos la versión de Python que deesemos en nuestro equipo.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/w1.jpg" />
+                    <p class="texto">
+                        Iniciamos la instalación y esperamos unos minutos a que la instalación termine.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/w2.jpg" />
+                    <p class="texto">
+                        Después de unos minutos tendremos Python instalado.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/w3.jpg" />
+                    <p class="texto">
+                        Ahora crearemos un entorno virtual con el comando "-m venv nombre_del_entorno"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/w4.jpg" />
+                    <p class="texto">
+                        Con el comando "nombre_del_entorno\Scripts\activate" activaremos el entorno para posteriormente utilizar el comando de isntalación de Django el cual aparece en la pagína marcarda en la introducción, en este caso fue "pip install Django==3.0.3"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/w5.jpg" />
+                    <p class="texto">
+                        Una vez instalado Django creamos un proyecto con el comando "django-admin startproject nombre_del_proyecto"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/w6.jpg" />
+                    <p class="texto">
+                        Nos movemos a la carpeta de nuestro proyecto y corremos el servidor con el comando "python manage.py runserver"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/w7.jpg" />
+                    <p class="texto">
+                        Abrimos el navegador y nos vamos a la dirección que marca la consola.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/w8.jpg" />
+                    <p class="texto">
+                        Por último agregamos una nueva vista usando el código antes mostrado.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/w9.jpg" />
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>
+            <div class="caja">
+                <div class="lateral_chico">&nbsp;</div>
+                <div class="caja_imagen" id="Lubuntu">
+                    <p class="texto_bienvenida">
+                        Instalar en Lubuntu
+                    </p>
+                    <p class="texto">
+                        Lo primero que tenemos que hacer es instalar Python, para ello utilizaremos el comando "sudo apt install python3"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/l1.jpg" />
+                    <p class="texto">
+                        Ahora instalaremos el pip de python con el comando "sudo apt install python3-pip"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/l2.jpg" />
+                    <p class="texto">
+                        Ahora con el comando "pip install virtualenv" instalaremos una herramienta para poder crear entornos virtuales.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/l3.jpg" />
+                    <p class="texto">
+                        Con el comando "-m virtualenv Nombre_del_entorno" crearemos nuestro entorno virtual.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/l4.jpg" />
+                    <p class="texto">
+                        Ahora con el comando "source Nombre_del_entorno/bin/activate" activaremos nuestro entorno virtual.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/l5.jpg" />
+                    <p class="texto">
+                        Después de activar nuestro entorno podremos instalar Django con el comando "pip3 install django"
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/l6.jpg" />
+                    <p class="texto">
+                        Esperamos unos minutos a que la instalación términe, para posteriormente crear un proyecto con el comando "django-admin startproject nombre_del_proyecto".
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/l7.jpg" />
+                    <p class="texto">
+                        Nos movemos a la carpeta del proyecto y utilizamos el comando "python manage.py runserver" para correr nuestro servidor.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/l8.jpg" />
+                    <p class="texto">
+                        Abrimos nuestro navegador con la dirección que nos muestra la consola y con eso terminamos la instalación de Django.
+                    </p>
+                    <img class="img_banner" src="Imagenes/Actividad_5/l9.jpg" />
+                </div>
+                <div class="lateral_chico">&nbsp;</div>
+            </div>       
+        </div>
+        <div class="pie">
+            <p class="copy">
+                Gustavo Rodrigo Contreras Ruvalcaba
+                <br>
+                
+            </p>
+        </div>
+    </body>
+</html>

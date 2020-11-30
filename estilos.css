@@ -1,0 +1,228 @@
+html, body
+{    
+   height: 100%;     
+}
+
+a
+{
+    text-decoration: none;
+    
+}
+
+.cuerpo
+{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.banner
+{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.img_banner
+{
+    width: 100%;
+    height: auto;
+}
+
+.caja
+{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1023px)
+{ 
+    .lateral
+    {
+        float: left;
+        width: 5%;
+    }
+    
+    .lateral_chico
+    {
+        float: left;
+        width: 5%;
+    }
+    
+    .bienvenida
+    {
+        float: left;
+        width: 90%;
+    }
+    
+    .texto_bienvenida
+    {
+        font-size: 5vw;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+    .texto_bienvenida_2
+    {
+        font-size: 6vw;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+    .caja_imagen
+    {
+        float: left;
+        width: 90%;
+    }
+    
+    .texto
+    {
+        font-size: 4vw;
+        text-align: justify;
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+    .listo
+    {
+        font-size: 4vw;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 3px;
+    }
+    
+    .listo:hover
+    {
+        font-size: 4vw;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+    }
+    
+    .boton_listo
+    {
+        float: left;
+        width: 90%;
+    }
+    
+    .pie
+    {
+        float: left;
+        width: 100%;
+        height: auto;
+        background-color: black;
+        position: relative; 
+    }
+
+    .copy
+    {
+        font-size: 4vw;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+    .lateral
+    {
+        float: left;
+        width: 20%;
+    }
+    
+    .lateral_chico
+    {
+        float: left;
+        width: 20%;
+    }
+    
+    .bienvenida
+    {
+        float: left;
+        width: 60%;
+    }
+    
+    .texto_bienvenida
+    {
+        font-size: 2.5vw;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+    .texto_bienvenida_2
+    {
+        font-size: 4vw;
+        text-align: center;
+        text-decoration: none;
+        color: black;   
+    }
+    
+    .caja_imagen
+    {
+        float: left;
+        width: 60%;
+    }
+    
+    .texto
+    {
+        font-size: 2vw;
+        text-align: justify;
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+    .listo
+    {
+        font-size: 2vw;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 3px;
+    }
+    
+    .listo:hover
+    {
+        font-size: 2vw;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+    }
+    
+    .boton_listo
+    {
+        float: left;
+        width: 60%;
+    }
+    
+    .pie
+    {
+        float: left;
+        width: 100%;
+        height: auto;
+        background-color: black;
+        position: relative; 
+    }
+
+    .copy
+    {
+        font-size: 2vw;
+        text-align: center;
+        color: white;
+    }
+}
